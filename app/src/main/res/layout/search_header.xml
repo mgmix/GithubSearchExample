@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:iconifiedByDefault="false"
+                app:queryHint="검색하세요"
+                />
+
+
+        </FrameLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+</layout>
